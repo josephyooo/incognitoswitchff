@@ -1,0 +1,33 @@
+{
+  "manifest_version": 2,
+  "name": "incognitoswitchff",
+  "version": "1.0",
+  "description": "Switch to and from incognito in Firefox ",
+  "homepage_url": "https://github.com/josephyooo/incognitoswitchff",
+  "icons": {
+    "48": "icons/Circle-information.svg",
+    "96": "icons/Circle-information.svg"
+  },
+
+  "browser_specific_settings": {
+    "gecko": {
+      "update_url": "https://github.com/josephyooo/incognitoswitchff/blob/main/updates.json"
+    }
+  },
+
+  "permissions": [
+    "tabs"
+  ],
+
+  "browser_action": {
+    "default_icon": {
+        "19": "icons/Circle-information.svg",
+        "38": "icons/Circle-information.svg"
+    },
+    "default_title": "Incognito Switch"
+  },
+
+  "background": {
+    "scripts": ["background.js"]
+  }
+}
